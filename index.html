@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      html, body {
+        background-color: #131313;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .test {
+        color: #cfcfcf;
+        font-size: 50px;
+      }
+      
+      .test::after {
+        content: ' ';
+        width: 300px;
+        background-color: #cfcfcf;
+        position: absolute;
+        left: 150px;
+        top: 50%;
+        height: 5px;
+        border-radius: 7px;
+      }
+
+      .test::before {
+        content: ' ';
+        width: 300px;
+        background-color: #cfcfcf;
+        position: absolute;
+        right: 150px;
+        top: 50%;
+        height: 5px;
+        border-radius: 7px;
+      }
+    </style>
+  </head>
+<body>
+  <div class="container">
+    <div class="test">Dylan</div>
+  </div>
+</body>
+</html>
